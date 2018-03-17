@@ -1,33 +1,29 @@
 " Brian Chu
 
-"" Colors
+" Colors {{{
 colorscheme peachpuff
 syntax enable
-
-" Spaces and Tabs
+" }}}
+" Spaces and Tabs {{{
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set modelines=2        
+set modelines=1        
 filetype plugin indent on
-
-"" UI Config
+" }}}
+" UI Config {{{
 set cursorline
 set wildmenu			"  visual autocomplete for command menu"
 set lazyredraw	    
-
-"" Searchinig
+" }}}
+" Searchinig {{{
 set incsearch			"  incremental search
 set hlsearch			"  highlight all matches
-
-"" Folding 
+" }}}
+" Folding {{{
 set foldenable          " enable folding
 set foldlevelstart=10   " open folds by that number of lines
 set foldnestmax=10      " 10 nested fold max
 set foldmethod=marker
-
-
-
-
-" vim:fdm=expr:fdl=0
-" vim:fde=getline(v\:lnum)=~'^""?'>'.(matchend(getline(v\:lnum),'""*')-2)\:'='
+" }}}
+" vim:foldmethod=marker:foldlevel=0
